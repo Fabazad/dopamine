@@ -1,4 +1,3 @@
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    console.log("Background got a message!")
-    sendResponse({})
-})
+chrome.runtime.onMessage.addListener(function(request, sender) {
+    chrome.tabs.update(sender.tab.id, {url: request.redirect});
+});
