@@ -1,5 +1,8 @@
 const networkFilters = {
-    urls: ["<all_urls>"]
+    urls: [
+        "https://*.amazon.fr/*",
+        "https://*.amazon.com/*"
+    ]
 };
 
 const tag = "fabazad7403-21";
